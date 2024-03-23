@@ -21,3 +21,13 @@ In case of use visual studio to create the aspnet core project, you can set up t
 ![](./docs/img/1.1_vs_project-creation-auth.png)
 
 ![](./docs/img/1.2_vs_project-creation-https.png)
+
+
+## Run Project
+
+To run the project
+
+```bash
+dotnet run
+```
+![](./docs/img/1.3_first_execution.png)
