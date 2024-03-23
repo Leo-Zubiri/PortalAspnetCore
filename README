@@ -18,6 +18,6 @@ dotnet dev-certs https --trust
 
 In case of use visual studio to create the aspnet core project, you can set up the same options:
 
-![](/docs/img/1.1_vs_project-creation-auth.png)
+![](./docs/img/1.1_vs_project-creation-auth.png)
 
-![](/docs/img/1.2_vs_project-creation-https.png)
+![](./docs/img/1.2_vs_project-creation-https.png)
