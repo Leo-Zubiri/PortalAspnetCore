@@ -31,3 +31,26 @@ To run the project
 dotnet run
 ```
 ![](./docs/img/1.3_first_execution.png)
+
+## SET the database
+
+https://learn.microsoft.com/en-us/ef/core/get-started/overview/install
+
+To add EF Core to an application, install the NuGet package for the database provider you want to use.
+
+In this case SQL SERVER:
+```bash
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+```
+
+### GET ENTITY FRAMEWORK CORE TOOLS
+
+```bash
+dotnet tool install --global dotnet-ef
+
+dotnet tool install --global dotnet-ef --version 7.0.17
+```
+
+```bash
+dotnet add package Microsoft.EntityFrameworkCore.Design
+```
