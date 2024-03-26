@@ -56,6 +56,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 
 ### SQL Server
 
+> If you need all the setup you can visit sqlserver git branch in this repo
+
 To add EF Core to an application, install the NuGet package for the database provider you want to use.
 
 In this case SQL SERVER:
