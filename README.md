@@ -54,6 +54,8 @@ dotnet add package Microsoft.EntityFrameworkCore.Design
 
 > As default the project has sqlite configuration, we need to set the correct connection string and apply the migrations to create the database
 
+[**Leer mas sobre la configuracion de SQLite**](./docs/md/1.%20SQLite.md)
+
 ### SQL Server
 
 > If you need all the setup you can visit sqlserver git branch in this repo
