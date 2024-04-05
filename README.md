@@ -106,7 +106,45 @@ Finally we need to setup the correct string connection sintax to stablished a co
 }
 ```
 
-### Apply migrations
+### PostgreSQL
+
+```bash
+dotnet add package Microsoft.EntityFrameworkCore
+```
+
+Install the database provider to the posgresql config:
+
+```bash
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL.Design
+```
+
+If we need to specify the version:
+```bash
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 7.0.11
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL.Design
+```
+
+Set the string connection:
+
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Host=127.0.0.1;Port=5432;Username=portal;Password=123456;Database=portalAspnetCore;"
+  }
+}
+```
+
+Change `Program.cs` to use the Npgsql provider with the connection string
+
+```csharp
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(connectionString));
+```
+
+Finally apply the migrations
+
+## Apply migrations
 
 > The database strategy used as default is the **code first** approach. This means that the database will be created or altered after we code it in our project with our migrations
 
